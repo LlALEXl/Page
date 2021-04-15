@@ -21,6 +21,10 @@
     h1 {
       background-color: lightgoldenrodyellow;
     }
+
+    color{
+      background-color: burlywood;
+    }
   </style>
 
 </head>
@@ -46,8 +50,9 @@
 
 
       <h1>El Rincón De Las Letras</h1>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <div class="barra">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Inicio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -57,25 +62,27 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" href="#main" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Contenido
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Publicaciones</a></li>
-                <li><a class="dropdown-item" href="#">Publicar</a></li>
+                <li><a class="dropdown-item" href="#publi">Publicaciones</a></li>
+                <li><a class="dropdown-item" href="#gale">Galeria</a></li>
+                <li><a class="dropdown-item" href="#car">Publicar</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Creadores</a></li>
+                <li><a class="dropdown-item" href="#creator">Creadores</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contactanos</a>
+              <a class="nav-link" href="#con">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nuestras Redes</a>
+              <a class="nav-link" href="#redes">Nuestras Redes</a>
             </li>
+
 
 
           </ul>
@@ -86,6 +93,7 @@
         </div>
       </div>
     </nav>
+    
 
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -121,7 +129,7 @@
     </div>
 
 
-    <div class="contenido text-start mt-3 mb-3">
+    <div class="contenido text-start mt-3 mb-3" >
       <h2 class="text-center mb-3">El Rincón De Las Letras</h2>
 
       <!-- Button trigger modal -->
@@ -152,17 +160,136 @@
 
       <p class="text-center mb-3 mt-3">El éxito en la vida no se mide por lo que logras sino por los obstáculos que superas.</p>
 
-      <h3>La creatividad es una combinación de disciplina y espiritu infantil </h3>
-      <p>Robert Grene</p>
-      <img src="img/1617137570887.jpg" alt="..." width="50%" height="50%">
+        <section id="creator">
+      <div class="accordion mb-3 mt-3 col col-12" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="false" aria-controls="collapseOne">
+              Frace mas popular
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>La vida es cómo una cámara: enfócate sólo en lo importante, captura los buenos momentos, saca de lo negativo algo positivo, y si no sale como esperabas, intenta una nueva toma.?</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Frase Random
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>No será fácil pero merecerá la pena.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Agradecimientos
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>156 Frases motivadoras – para ALCANZAR el éxito 2021</p>
+              <p>EL Rincón De Las Letras</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h3 class="mt-3 mb-3">La felicidad en la vida consiste en tener siempre algo que hacer, alguien a quien amar y
-        algo que esperar</h3>
-      <p>El Rincòn De Las Letras</p>
-      <img src="img/1617137570895.jpg" alt="..." width="50%" height="50%">
+      <section id="publi" class="bg-white"> 
+      <div class="border-5 border-white">
+      <div class="card-group">
+        <div class="card">
+          <img src="img/1617137570887.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">La creatividad es una combinación de disciplina y espiritu infantil </p>
+            <p class="card-text"><small class="text-muted">El Rincón De Las Letras</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/1617137570895.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">La felicidad en la vida consiste en tener siempre algo que hacer, alguien a quien amar y
+              algo que esperar.</p>
+            <p class="card-text"><small class="text-muted">El Rincón De Las Letras</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/1618446007575.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">"El futuro depende de lo qué hagas hoy".</p>
+            <p class="card-text"><small class="text-muted">Gandhi</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-group my-3">
+        <div class="card">
+          <img src="img/1618446007582.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">"No es la altura nie el peso, ni los músculos, ni la belleza que te hacen una gran persona. Es el corazón y la humildad".</p>
+            <p class="card-text"><small class="text-muted">El Rincón De Las Letras</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/1618446007590.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">La valentía más grande del ser humano es mantenerse de pie, aun cuando se este cayendo a pedazos.</p>
+            <p class="card-text"><small class="text-muted">El Rincón De Las Letras</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/1618446007596.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Lucha por tus sueños, por tus ideales. Los caminos pocas veces están llenos de rosas, la mayória lo están de espinas.</p>
+            <p class="card-text"><small class="text-muted">El Rincón De Las Letras</small></p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="card-group my-3">
+        <div class="card">
+          <img src="img/1618446007604.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Las grandes ideas vienen del futuro de la creatividad e imaginación.</p>
+            <p class="card-text"><small class="text-muted">El Rincón De Las Letras</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/1618446007609.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">"No hay peor ciego, que el que y vio la realidad y decide volver a cerrar los ojos".</p>
+            <p class="card-text"><small class="text-muted">El Rincón De Las Letras</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/1618446007616.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Aquellos que están lo sufucientemente locos como para creer que pueden cambiar al mundo son quienes lo cambian.</p>
+            <p class="card-text"><small class="text-muted">Steve Jobs</small></p>
+          </div>
+          
+        </div>
+      </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    </section>
+
+    
+    <div class="card text-center border-3 border-white my-2" style="width: 18rem;">
       <img src="img/95675362_781561559041183_2561675948835471360_n.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Día del niño</h5>
@@ -171,61 +298,26 @@
       </div>
     </div>
 
-    <div class="accordion mb-3 mt-3 col col-12" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="false" aria-controls="collapseOne">
-            Frace mas popular
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p>La vida es cómo una cámara: enfócate sólo en lo importante, captura los buenos momentos, saca de lo negativo algo positivo, y si no sale como esperabas, intenta una nueva toma.?</p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Frase Random
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p>No será fácil pero merecerá la pena.</p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Agradecimientos
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p>156 Frases motivadoras – para ALCANZAR el éxito 2021</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
+   
+    <section id="car">
     <nav id="navbar-example2" class="navbar navbar-light bg-light">
       <a class="navbar-brand ps-2" href="#">Sujerencias</a>
+        <!--
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link" href="#fat">Frases populares</a>
+          <a class="nav-link" href="#mdo">Amor</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#mdo">Poco conocidas</a>
+          <a class="nav-link" href="#one">Amistad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#two">Alegria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#three">Tristesa</a>
         </li>
       </ul>
+      -->
     </nav>
     <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
       <h4 id="fat">Moraleja</h4>
@@ -243,6 +335,301 @@
       <h4 id="three">Tristesa</h4>
       <p>Las lágrimas nacen del corazón, no del cerebro <br> <strong>Leonardo da Vinci</strong></p>
     </div>
+  </section>
+
+    <section id="gale">
+      <!-- Gallery -->
+<div class="row bg-white">
+  <h2 class="text-center my-4">Galeria</h2>
+
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="img/1617137570895.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="img/1617137570903.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="img/1618446007582.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="img/1618446007590.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="img/1618446007596.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="img/1618446007604.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    
+    <img
+      src="img/1618446007609.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="img/1618446007616.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="img/95675362_781561559041183_2561675948835471360_n.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="img/pexels-hector-perez-2291825.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="img/pexels-lisa-fotios-1921336.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="img/pexels-daniela-constantini-5591665.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="img/pexels-daniela-constantini-5591722.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="img/pexels-gabby-k-5874738.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="img/pexels-hector-perez-2291825.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="img/pexels-johnmark-smith-211291.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="img/pexels-johnmark-smith-281962.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    
+    <img
+      src="img/pexels-vie-studio-4439461.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="img/pexels-pixabay-261763.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="img/pexels-gabby-k-5708966.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="img/pexels-liza-summer-6348107.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+<div class="col-lg-4 mb-4 mb-lg-0">
+  <img
+    src="img/pexels-pixabay-51191.jpg"
+    class="w-100 shadow-1-strong rounded mb-4"
+    alt=""
+  />
+  <img
+    src="img/pexels-gabby-k-5874738.jpg"
+    class="w-100 shadow-1-strong rounded mb-4"
+    alt=""
+  />
+</div>
+
+
+      
+
+    </section>
+
+    <section id="con">
+
+      <div class="container my-4 bg-white border-2 border-white">
+        <h2 class="text-center display-4 mb-5">Contacto</h2>
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+        <div class="valid-feedback">
+          ¡Se ve bien!
+        </div>
+        <div class="invalid-feedback">
+          Por favor ingresa tu nombre.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="validationCustom02" value="" required>
+        <div class="valid-feedback">
+          ¡Se ve bien!
+        </div>
+        <div class="invalid-feedback">
+          Por favor ingrese sus apellidos.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <div class="valid-feedback">
+            ¡Se ve bien!
+          </div>
+          <div class="invalid-feedback">
+            Por favor elige un nombre de usuario.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">País</label>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="Solo México" required>
+        <div class="valid-feedback">
+          ¡Se ve bien!
+        </div>
+        <div class="invalid-feedback">
+          Por favor elige una ciudad valida. 
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">Estado</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Elige</option>
+          <option>Aguscalientes</option>
+          <option>Baja California</option>
+          <option>Baja California Sur</option>
+          <option>Campeche</option>
+          <option>Chiapas</option>
+          <option>Chiuahua</option>
+          <option>Coahuila</option>
+          <option>Colima</option>
+          <option>Ciudad de México / Distrito Federal</option>
+          <option>Durango</option>
+          <option>Estado de México</option>
+          <option>Guanajuato</option>
+          <option>Gerrero</option>
+          <option>Hidalgo</option>
+          <option>Jalisco</option>
+          <option>Michoacán</option>
+          <option>Morelos</option>
+          <option>Nayarit</option>
+          <option>Nuevo León</option>
+          <option>Oaxaca</option>
+          <option>Puebla</option>
+          <option>Querétaro</option>
+          <option>Quintana Roo</option>
+          <option>San Luis Potosí</option>
+          <option>Sinaloa</option>
+          <option>Sonora</option>
+          <option>Tabasco</option>
+          <option>Tamaulipas</option>
+          <option>Tlaxcala</option>
+          <option>Veracruz</option>
+          <option>Yucatán</option>
+          <option>Zacatecas</option>
+        </select>
+        <div class="valid-feedback">
+          ¡Se ve bien!
+        </div>
+        <div class="invalid-feedback">
+          Por favor elige un estado valido.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Codigo Postal</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="valid-feedback">
+          ¡Se ve bien!
+        </div>
+        <div class="invalid-feedback">
+          Por favor proporciona un codigo postal valido.
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Acepto terminos y Condiciones.
+          </label>
+          <div class="invalid-feedback">
+            Debes estar de acuerdo antes de enviar.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Subir Formulario</button>
+      </div>
+    </form>
+  </div>
+
+  </section>
+
 
     <!-- Footer -->
     <footer class="bg-dark text-center text-white mb-3">
@@ -284,7 +671,7 @@
           <!-- Section: Social media -->
 
           <!-- Section: Form -->
-          <section class="">
+          <section id="redes">
             <form action="">
               <!--Grid row-->
               <div class="row d-flex justify-content-center">
@@ -292,29 +679,10 @@
                 <div class="col-auto">
                   <p class="pt-2">
                     <strong>Correo Electronico</strong>
+                    <p>el.rincon.de.las.letras.1@gmail.com</p>
                   </p>
                 </div>
                 <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-5 col-12">
-                  <!-- Email input -->
-                  <div class="form-outline form-white mb-4">
-                    <input type="email" id="form5Example2" class="form-control" />
-                    <label class="form-label" for="form5Example2">Dirección de Correo</label>
-                  </div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-auto">
-                  <!-- Submit button -->
-                  <button type="submit" class="btn btn-outline-light mb-4">
-                    Suscribete
-                  </button>
-                </div>
-                <!--Grid column-->
-              </div>
               <!--Grid row-->
             </form>
           </section>
@@ -347,7 +715,10 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
 
-
+    <script src="app.js"></script>
 </body>
+
+
+
 
 </html>
